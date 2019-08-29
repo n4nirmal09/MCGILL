@@ -1,0 +1,16 @@
+.featured-article {
+  &__content {
+    //padding-left: calculaterem(62px, $font-size-root);
+    position: relative;
+
+    &:before {
+      border-bottom: calculaterem(6px, $font-size-root) solid theme-color('primary');
+      content: '';
+      display: none;
+      left: 0;
+      position: absolute;
+      top: calculaterem(5px, $font-size-root);
+      width: calculaterem(22px, $font-size-root);
+    }
+  }
+}

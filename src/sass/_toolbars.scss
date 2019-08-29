@@ -1,0 +1,48 @@
+.toolbar-header {
+
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99;
+
+
+  &__container {
+    background: theme-color(secondary);
+    box-shadow: elevate-shadow(elevate-1);
+    display: flex;
+    justify-content: space-between;
+
+    &--desktop {
+      &:not(.toolbar-header__container--full-extended) {
+        @include media-breakpoint-up(xxxl) {
+          max-width: 35%;
+        }
+
+        max-width: 630px;
+      }
+      transition: padding .3s ease;
+    }
+  }
+
+  &__dropdown {
+    background: theme-color(primary);
+    color: $light;
+    left: 0;
+    padding-bottom: 35px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+
+    &-nav {
+      padding: 30px 0 50px;
+    }
+
+    &-footer {
+      align-items: center;
+      display: flex;
+      font-size: .6rem;
+      justify-content: space-between;
+    }
+  }
+}

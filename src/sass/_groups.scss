@@ -1,0 +1,46 @@
+.header-cta {
+  &__group {
+    align-items: center;
+    display: flex;
+
+  }
+
+  &__link {
+    @include media-breakpoint-down(xs) {
+      padding: 0 10px;
+    }
+
+    display: block;
+    padding: 0 15px;
+
+    > a,
+    > span {
+      display: block;
+    }
+  }
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item + &__item {
+    margin-left: 6px;
+  }
+}
+
+.business-card-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.cta-card-group {
+  > .cta-card + .cta-card {
+    @include media-breakpoint-down(md) {
+      border-top: 1px solid;
+    }
+    border-top: 2px solid;
+  }
+}

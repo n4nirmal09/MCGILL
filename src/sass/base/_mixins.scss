@@ -1,0 +1,56 @@
+@mixin media-breakpoint-custom-down($width) {
+  @media (max-width: $width - 1) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-custom-up($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+// Linear gradients
+
+
+@mixin linear-gradient($direction, $color-stops...) {
+
+  // Direction has been omitted and happens to be a color-stop
+  @if is-direction($direction)==false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
+  }
+
+  //background: nth(nth($color-stops, 1), 1); 
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+
+
+// Place holders
+@mixin placeholder() {
+  &::-webkit-input-placeholder {
+    color: #fff;
+    @content
+  }
+
+  &:-moz-placeholder {
+    @content
+  }
+
+  &::-moz-placeholder {
+    @content
+  }
+
+  &:-ms-input-placeholder {
+    @content
+  }
+
+  &::placeholder {
+    @content;
+    opacity: 1;
+    /* Firefox */
+  }
+
+}

@@ -1,0 +1,20 @@
+.main-logo {
+
+  width: calculaterem(125px, $font-size-root);
+
+  &__link {
+    display: block;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+
+  &--mobile {
+    @include media-breakpoint-down(xs) {
+      width: 100px;
+    }
+    width: 125px;
+  }
+}

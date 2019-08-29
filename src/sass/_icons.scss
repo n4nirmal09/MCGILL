@@ -1,0 +1,84 @@
+[class*='icon'] {
+  display: inline-block;
+
+  > svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.icon {
+  &-mail {
+    height: calculaterem(23px, $font-size-root);
+    width: calculaterem(30px, $font-size-root);
+  }
+
+  &-phone {
+    height: calculaterem(26px, $font-size-root);
+    width: calculaterem(23px, $font-size-root);
+  }
+
+  &-linkedin-square,
+  &-twitter-square { 
+    height: 24px;
+    width: 24px;
+
+  }
+
+  &-property {
+    height: calculaterem(90px, $font-size-root);
+    width: calculaterem(82px, $font-size-root);
+  }
+
+  &-energy {
+    height: calculaterem(99px, $font-size-root);
+    width: calculaterem(75px, $font-size-root);
+  }
+
+  &-marine {
+    height: calculaterem(54px, $font-size-root);
+    width: calculaterem(129px, $font-size-root);
+  }
+
+  &-aviation {
+    height: calculaterem(61px, $font-size-root);
+    width: calculaterem(120px, $font-size-root);
+  }
+
+  &-solution {
+    height: calculaterem(78px, $font-size-root);
+    width: calculaterem(74px, $font-size-root);
+  }
+
+  &-financial {
+    height: calculaterem(88px, $font-size-root);
+    width: calculaterem(76px, $font-size-root);
+  }
+
+  &-reinsurance {
+    height: calculaterem(92px, $font-size-root);
+    width: calculaterem(88px, $font-size-root);
+  }
+
+  &-sound {
+    height: calculaterem(50px, $font-size-root);
+    width: calculaterem(50px, $font-size-root);
+  }
+}
+
+.burger-menu {
+  display: inline-block;
+  width: calculaterem(30px, $font-size-root);
+
+  &__rect {
+    background: theme-color(primary);
+    display: block;
+    height: calculaterem(6px, $font-size-root);
+    width: 100%;
+
+    & + * {
+      margin-top: 6px;
+    }
+  }
+}

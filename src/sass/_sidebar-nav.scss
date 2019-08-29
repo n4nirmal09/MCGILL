@@ -1,0 +1,56 @@
+.sidebar-nav {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    padding-left: calculaterem(36px, $font-size-root);
+    position: relative;
+
+    &--active {
+      > a {
+        &:before {
+          transform: translateY(-50%) scaleX(1);
+        }
+      }
+    }
+  }
+
+  &__link {
+    backface-visibility: hidden;
+    display: block;
+    font-size: calculaterem(16px, $font-size-root);
+    padding: calculaterem(10px, $font-size-root) 0;
+
+    &:before {
+      border-bottom: calculaterem(6px, $font-size-root) solid;
+      content: '';
+      display: block;
+      left: calculaterem(5px, $font-size-root);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) scaleX(0);
+      transform-origin: left;
+      transition: transform ease .3s;
+
+      width: calculaterem(22px, $font-size-root);
+
+    }
+
+    
+    &:hover {
+      text-decoration: none;
+    }
+    
+  }
+
+  &--fixed {
+    left: 0;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+  }
+}

@@ -1,0 +1,27 @@
+.container {
+  @include media-breakpoint-up(xxxl) {
+    max-width: 51%;
+  }
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+  }
+}
+
+.container,
+.container-fluid {
+  @include media-breakpoint-up(xxl) {
+    padding-left: calculaterem($grid-gutter-width/2, $font-size-root);
+    padding-right: calculaterem($grid-gutter-width/2, $font-size-root);
+  }
+  @include media-breakpoint-down(xs) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+[data-bg] {
+  overflow: hidden;
+}

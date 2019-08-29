@@ -1,0 +1,31 @@
+* {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; 
+  text-rendering: optimizeLegibility; 
+}
+
+html {
+  @include media-breakpoint-up(xxxl) {
+    font-size: calculatevw($font-size-root, 1902px);
+  }
+
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-root-sm;
+  }
+  
+  font-size: $font-size-root;
+  
+}
+
+@each $theme-color, $value in $theme-colors {
+  a {
+    &.text-#{$theme-color}--retain {
+      &:hover,
+      &:focus {
+        color: $value !important;
+      }
+      
+    }
+  }
+  
+}

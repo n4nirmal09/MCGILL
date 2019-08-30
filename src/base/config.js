@@ -5,6 +5,7 @@ import mixins from '@/mixins'
 import reveal from '@/directives/reveal'
 import bgimage from '@/directives/bgimage'
 import scrollParallax from '@/directives/scroll-parallax'
+import pin from '@/directives/pin'
 import headerToolbar from '@/components/toolbars/header-toolbar'
 import headerMobileToolbar from '@/components/toolbars/header-mobile-toolbar'
 import footerToolbar from '@/components/toolbars/footer-toolbar'
@@ -83,6 +84,7 @@ const BaseConfig = {
         Vue.directive('reveal', reveal)
         Vue.directive('bgimage', bgimage)
         Vue.directive('parallax', scrollParallax)
+        Vue.directive('pin', pin)
 
         // Components
         Vue.component('header-toolbar', headerToolbar)

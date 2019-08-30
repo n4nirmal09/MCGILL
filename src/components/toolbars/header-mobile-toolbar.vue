@@ -1,5 +1,6 @@
 <template>
-    <header id="main-header" class="toolbar-header toolbar-header--mobile">
+    <header id="main-header" class="toolbar-header toolbar-header--mobile"
+    v-pin="{triggerElement: '#main-content', offsetViewportHeight: true}">
         <div class="container-fluid toolbar-header__container align-items-end py-2">
             <div class="toolbar-header__col toolbar-header__col-left">
                 <div class="main-logo main-logo--mobile">

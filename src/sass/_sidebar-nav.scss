@@ -48,7 +48,8 @@
 
   &--fixed {
     left: 0;
-    position: fixed;
+    min-width: 130px;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 9;

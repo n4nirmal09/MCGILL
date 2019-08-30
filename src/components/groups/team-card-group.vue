@@ -3,7 +3,7 @@
 		<div class="row" v-reveal="{
         animation: 'from-bottom-elems-stagger'
     }">
-    	<div class="col-6 col-md-3" v-for="(member,n) in teams" :key="member + '-' + n">
+    	<div class="col-6" v-for="(member,n) in teams" :key="member + '-' + n">
     		<team-card :image="member.thumbnail">
 					<template slot="name">{{ member.name }}</template>
 					<template slot="description">{{ member.description }}</template>

@@ -45,12 +45,15 @@
   &__description {
     @include media-breakpoint-down(sm) {
       flex: 0 0 100%;
+      max-width: 100%;
+      padding-right: 0;
     }
-    flex: 0 0 48%;
+    flex: 1;
     font-family: $font-family-secondary;
     font-size: $display4-size;
     font-style: italic;
-
+    max-width: 50%;
+    padding-right: 2rem;
   }
 
   &__controls {
@@ -59,22 +62,22 @@
       display: flex;
       flex: 0 0 auto;
     }
-    background: theme-color('secondary');
-    color: theme-color('primary');
-    flex: 0 0 32%;
+    
+    flex: 1;
     font-size: $display4-size;
-    padding: .5rem;
+    padding: 0 .5rem;
 
     &-link {
+
       display: block;
     }
   }
 
   &__grid {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    
   }
   
 }

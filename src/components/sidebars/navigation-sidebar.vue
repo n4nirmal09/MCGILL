@@ -1,5 +1,6 @@
 <template>
-    <nav class="sidebar-nav sidebar-nav--fixed sidebar-nav--left">
+    <nav class="sidebar-nav sidebar-nav--fixed sidebar-nav--left" 
+    v-pin="{triggerElement: '#main-content', offsetViewportHeight: true, hook: 'onLeave'}">
         <ul class="sidebar-nav__list">
             <li class="sidebar-nav__item" v-for="(navItem, n) in navList" :key="navItem.title + '-' + n">
                 <a :href="'#' + navItem.targetSection" 
@@ -16,7 +17,7 @@ export default {
 	props: ['theme'],
 
     mounted() {
-        console.log('')
+        
         this.$nextTick(() => {
             setTimeout(this.scrollSpy, 500)
             const resize = utilities.debounce(() => {

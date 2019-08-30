@@ -12,8 +12,7 @@
 				<slot name="description"></slot>
 			</div>
 			<div class="cta-card__controls">
-				<span class="cta-card__controls-label">Email:</span>
-				<a :href="'mailto:' + mail" class="cta-card__controls-link" target="_blank">{{ mail }}</a>
+				<a :href="'mailto:' + mail" class="cta-card__controls-link text-light" target="_blank">{{ mail }}</a>
 			</div>
 		</div>
 	</div>

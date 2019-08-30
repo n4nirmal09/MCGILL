@@ -1,10 +1,12 @@
 .toolbar-header {
 
   left: 0;
-  position: fixed;
-  right: 0;
+  position: absolute;
   top: 0;
+  width: 100%;
   z-index: 99;
+
+
 
 
   &__container {
@@ -14,14 +16,16 @@
     justify-content: space-between;
 
     &--desktop {
-      &:not(.toolbar-header__container--full-extended) {
-        @include media-breakpoint-up(xxxl) {
-          max-width: 35%;
-        }
+      background: none;
+      box-shadow: none;
+      // &:not(.toolbar-header__container--full-extended) {
+      //   @include media-breakpoint-up(xxxl) {
+      //     max-width: 35%;
+      //   }
 
-        max-width: 630px;
-      }
-      transition: padding .3s ease;
+      //   max-width: 630px;
+      // }
+      
     }
   }
 

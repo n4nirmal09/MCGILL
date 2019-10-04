@@ -19,7 +19,7 @@ module.exports = {
   
   filenameHashing: true,
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/clients/earnest/mcgill'
+    ? '/'
     : '/',
 
   pluginOptions: {

@@ -47,7 +47,7 @@
                 <icon-financial />
             </template>
             <template slot="title">
-                <h3>Financial and Special Risks</h3>
+                <h3>Financial & Special Risks</h3>
             </template>
         </business-card>
         <business-card>

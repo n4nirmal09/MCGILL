@@ -19,7 +19,7 @@ export default {
     mounted() {
         
         this.$nextTick(() => {
-            setTimeout(this.scrollSpy, 500)
+            setTimeout(this.scrollSpy, 2000)
             const resize = utilities.debounce(() => {
                 this.scrollController.destroy(true)
                 this.scrollSpy()

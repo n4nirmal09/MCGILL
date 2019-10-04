@@ -4,13 +4,13 @@
             <div class="row justify-content-center pb-1 align-items-center">
                 <div class="col-lg-8">
                     <ul class="social-list">
-                        <li class="social-list__item">
+                        <!-- <li class="social-list__item">
                             <a href="https://www.linkedin.com/company/mcgillandpartners/" class="social-list__link" target="_blank">
                                 <icon-twitter></icon-twitter>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="social-list__item">
-                            <a href="https://twitter.com/McGillPartners" target="_blank" class="social-list__link">
+                            <a href="https://www.linkedin.com/company/mcgillandpartners/about/" target="_blank" class="social-list__link">
                                 <icon-linkedin></icon-linkedin>
                             </a>
                         </li>

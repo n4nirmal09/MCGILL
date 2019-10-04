@@ -12,7 +12,7 @@
                                     <h2>There is only one placement like yours.<br>And only one definitive answer.</h2>
                                 </template>
                                 <template slot="content">
-                                    <p>Complex placements in a rapidly changing market need true expertise combined with a fresh perspective. That is the driving force behind the creation of McGill and Partners, a new boutique specialist insurance broker.</p>
+                                    <p>Complex placements in a rapidly changing market need true expertise combined with a fresh perspective. That is the driving force behind the creation of McGill and Partners, a new boutique specialist (re)insurance broker.</p>
                                     <p>We believe that an open, aligned and progressive insurance market benefits everyone. Our role as brokers is to create specialist transactions to manage risk, while delivering economic flexibility and stability for our clients.</p>
                                     <p>We deliver market defining risk solutions to a select group of clients. We are proud to be discerning. In the clients we work for, the partners we work with and the talent who drive us forward. Launching in 2019, our vision helped secure significant backing from Warburg Pincus, whose experience across a broad range of sectors makes them the ideal partner for our ambitious global plans.</p>
                                 </template>
@@ -64,7 +64,7 @@ export default {
 
     mounted() {
         this.$nextTick(() => {
-            setTimeout(this.sectionBg, 500)
+            setTimeout(this.sectionBg, 2000)
             const resize = utilities.debounce(() => {
                 this.scrollController.destroy(true)
                 this.sectionBg()

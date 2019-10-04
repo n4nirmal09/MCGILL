@@ -26,39 +26,41 @@
 
   }
 
+  $feature-icon-reducer: 10px;
+
   &-property {
-    height: calculaterem(90px, $font-size-root);
-    width: calculaterem(82px, $font-size-root);
+    height: calculaterem((90px - $feature-icon-reducer), $font-size-root);
+    width: calculaterem((82px - $feature-icon-reducer), $font-size-root);
   }
 
   &-energy {
-    height: calculaterem(99px, $font-size-root);
-    width: calculaterem(75px, $font-size-root);
+    height: calculaterem(99px - $feature-icon-reducer, $font-size-root);
+    width: calculaterem(75px - $feature-icon-reducer, $font-size-root);
   }
 
   &-marine {
-    height: calculaterem(54px, $font-size-root);
-    width: calculaterem(129px, $font-size-root);
+    height: calculaterem(54px - $feature-icon-reducer, $font-size-root);
+    width: calculaterem(129px - $feature-icon-reducer, $font-size-root);
   }
 
   &-aviation {
-    height: calculaterem(61px, $font-size-root);
-    width: calculaterem(120px, $font-size-root);
+    height: calculaterem(61px - $feature-icon-reducer, $font-size-root);
+    width: calculaterem(120px - $feature-icon-reducer, $font-size-root);
   }
 
   &-solution {
-    height: calculaterem(78px, $font-size-root);
-    width: calculaterem(74px, $font-size-root);
+    height: calculaterem(78px - $feature-icon-reducer, $font-size-root);
+    width: calculaterem(74px - $feature-icon-reducer, $font-size-root);
   }
 
   &-financial {
-    height: calculaterem(88px, $font-size-root);
-    width: calculaterem(76px, $font-size-root);
+    height: calculaterem(88px - $feature-icon-reducer, $font-size-root);
+    width: calculaterem(76px - $feature-icon-reducer, $font-size-root);
   }
 
   &-reinsurance {
-    height: calculaterem(92px, $font-size-root);
-    width: calculaterem(88px, $font-size-root);
+    height: calculaterem(92px - $feature-icon-reducer, $font-size-root);
+    width: calculaterem(88px - $feature-icon-reducer, $font-size-root);
   }
 
   &-sound {

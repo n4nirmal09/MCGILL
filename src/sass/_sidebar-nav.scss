@@ -22,7 +22,7 @@
     backface-visibility: hidden;
     display: block;
     font-size: calculaterem(16px, $font-size-root);
-    padding: calculaterem(10px, $font-size-root) 0;
+    padding: calculaterem(5px, $font-size-root) 0;
 
     &:before {
       border-bottom: calculaterem(6px, $font-size-root) solid;

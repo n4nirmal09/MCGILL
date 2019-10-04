@@ -5,3 +5,11 @@
 .font-style-italic {
   font-style: italic;
 }
+
+.link-underlined {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

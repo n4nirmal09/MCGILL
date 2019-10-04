@@ -5,11 +5,13 @@
   }
   flex: 0 0 25%;
   padding: calculaterem(20px, $font-size-root) 0;
+  text-align: center;
 
   &__icon {
     align-items: flex-end;
     display: flex;
     height: calculaterem(100px, $font-size-root);
+    justify-content: center;
     margin-bottom: calculaterem(45px, $font-size-root);
   }
 }
@@ -17,10 +19,11 @@
 .team-card {
   &__figure {
     margin-bottom: calculaterem(35px, $font-size-root);
+    max-width: 85%;
   }
 
   &__image {
-    border-radius: 50%;
+    //border-radius: 50%;
     display: block;
     max-width: 100%;
   }
@@ -58,9 +61,7 @@
 
   &__controls {
     @include media-breakpoint-down(sm) {
-      align-items: center;
-      display: flex;
-      flex: 0 0 auto;
+      padding: 0;
     }
     
     flex: 1;

@@ -103,7 +103,7 @@ export default {
         },
 
         videoEndListener() {
-            this.videoPlay()
+            //this.videoPlay()
             if(this.videoScrollTrigger) {
                 this.scrollToTop(this.$el.offsetHeight)
             }

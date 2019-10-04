@@ -24,7 +24,7 @@
             <div data-bg="light" class="bg-secondary">
                 <title-content-section>
                     <template slot="header">
-                        <h2>Our core lines of business</h2>
+                        <h2>Our core areas of expertise</h2>
                     </template>
                     <template slot="content">
                         <business-card-group></business-card-group>

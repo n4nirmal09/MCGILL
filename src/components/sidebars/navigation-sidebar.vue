@@ -40,7 +40,7 @@ export default {
                 title: 'Who we are',
                 targetSection: "who-we-are"
             }, {
-                title: 'Join us',
+                title: 'Contact us',
                 targetSection: "join-us"
             }]
         }

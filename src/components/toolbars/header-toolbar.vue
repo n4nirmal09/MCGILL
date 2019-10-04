@@ -1,15 +1,14 @@
 <template>
-    <header id="main-header" class="toolbar-header toolbar-header--desktop" 
-    v-pin="{triggerElement: '#main-content', offsetViewportHeight: true}">
+    <header id="main-header" class="toolbar-header toolbar-header--desktop" >
         <div class="toolbar-header__container toolbar-header__container--desktop align-items-center px-3"
-        :class="[$baseConfig.state.windowScrollPos.Y > 50 ? 'pt-4' : 'pt-4', 
+        :class="[$baseConfig.state.windowScrollPos.Y > 50 ? 'pt-4 px-4' : 'pt-4 px-4', 
         fullExtended ? 'container-fluid toolbar-header__container--full-extended' : 'container']">
             <div class="toolbar-header__col toolbar-header__col-left"></div>
             <div class="toolbar-header__col toolbar-header__col-right">
                 <div class="main-logo">
                     <router-link to="/" class="main-logo__link">
                         <!-- <img class="main-logo__image" :src="require('@/assets/logo.png')" alt=""> -->
-                        <svg class="main-logo__svg-image" viewBox="0 0 500 182">
+                        <svg class="main-logo__svg-image main-logo__svg-image--light" viewBox="0 0 500 182">
                           <defs>
                             <clipPath id="main-logo__svg-mask" class="main-logo__svg-mask">
                               <rect x="0" y="0" width="100%" height="100%" />
@@ -66,6 +65,8 @@
                 scenes = [],
                 mainInstance = this,
                 mainLogo = this.$el.querySelector('.main-logo'),
+                mainLogoSvgLight = this.$el.querySelector('.main-logo__svg-image--light'),
+                mainLogoSvgDark = this.$el.querySelector('.main-logo__svg-image--dark'),
                 maskLight = this.$el.querySelector('#main-logo__svg-mask > rect'),
                 maskDark = this.$el.querySelector('#main-logo__svg-mask--dark > rect'),
                 directionToggler = 1
@@ -76,20 +77,23 @@
                 
                 sections.forEach((section) => {
                     let sectionBg = section.dataset.bg,
-                    yOffset = 0,
+                    darkOffset = 0,
+                    lightOffset = 0,
                     tween = null,
                     scene = null
                     if(sectionBg === "dark") {
-                        yOffset = "182" * directionToggler
+                        darkOffset = "182" * directionToggler
                         directionToggler = -1
                     } else {
-                        yOffset = "0"
+                        darkOffset = 0
                     }
-                    tween = new TimelineMax() 
+
+                    tween = new TimelineMax()
                     tween.to(maskDark, 0.5, {
-                        y: yOffset,
+                        y: darkOffset,
                         ease: Power0.easeNone
                     })
+
                     scene = new ScrollMagic.Scene({
                         triggerElement: section,
                         triggerHook: 'onLeave',
@@ -98,7 +102,7 @@
                     })
                     .setTween(tween)
                     .on('enter', () => {
-                        console.log(section)
+                        
                     })
 
                     scenes.push(scene)

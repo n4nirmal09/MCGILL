@@ -1,6 +1,6 @@
 <template>
 	<div class="team-card">
-		<figure class="team-card__figure d-none">
+		<figure class="team-card__figure">
 			<img class="team-card__image" :src="image" alt="">
 		</figure>
 		<h3 class="team-card__name">

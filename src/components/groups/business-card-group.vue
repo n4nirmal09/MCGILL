@@ -7,7 +7,7 @@
                 <icon-property />
             </template>
             <template slot="title">
-                <h3>Property <br>& casualty</h3>
+                <h3>Property & Casualty</h3>
             </template>
         </business-card>
         <business-card>
@@ -15,7 +15,7 @@
                 <icon-energy />
             </template>
             <template slot="title">
-                <h3>Energy</h3>
+                <h3>Energy & Power</h3>
             </template>
         </business-card>
         <business-card>
@@ -23,7 +23,7 @@
                 <icon-marine />
             </template>
             <template slot="title">
-                <h3>Marine</h3>
+                <h3>Marine & Cargo</h3>
             </template>
         </business-card>
         <business-card>
@@ -31,7 +31,7 @@
                 <icon-aviation />
             </template>
             <template slot="title">
-                <h3>Aviation</h3>
+                <h3>Aviation & Aerospace</h3>
             </template>
         </business-card>
         <business-card>
@@ -39,7 +39,7 @@
                 <icon-solution />
             </template>
             <template slot="title">
-                <h3>Structured <br>solutions</h3>
+                <h3>Structured Solutions</h3>
             </template>
         </business-card>
         <business-card>
@@ -47,7 +47,7 @@
                 <icon-financial />
             </template>
             <template slot="title">
-                <h3>Finanical</h3>
+                <h3>Financial and Special Risks</h3>
             </template>
         </business-card>
         <business-card>

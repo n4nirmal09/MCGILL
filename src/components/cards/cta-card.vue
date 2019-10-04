@@ -12,13 +12,14 @@
 				<slot name="description"></slot>
 			</div>
 			<div class="cta-card__controls">
-				<a :href="'mailto:' + mail" class="cta-card__controls-link text-light" target="_blank">{{ mail }}</a>
+				<a v-if="mail" :href="'mailto:' + mail" class="cta-card__controls-link text-light d-block" target="_blank">{{ mail }}</a>
+				<span v-if="phone" class="cta-card__controls-span text-light mt-1 d-block">{{ phone }}</span>
 			</div>
 		</div>
 	</div>
 </template>
 <script>
 	export default {
-		props:['title', 'mail', 'appendClasses']
+		props:['title', 'mail', 'phone', 'appendClasses']
 	}
 </script>

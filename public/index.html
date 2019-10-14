@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="McGill and Partners - a new boutique specialist (re)insurance broker.">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>McGill and Partners | Specialist Insurance Brokers</title>
     <script src="<%= BASE_URL %>js/greensock/TweenMax.min.js"></script>
     <script src="<%= BASE_URL %>js/scrollmagic/ScrollMagic.min.js"></script>
     <script src="<%= BASE_URL %>js/scrollmagic/plugins/animation.gsap.min.js"></script>
-  </head>
-  <body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146842914-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-146842914-1');
+    </script>
+</head>
+
+<body>
     <noscript>
-      <strong>We're sorry but mcgill doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+        <strong>We're sorry but mcgill doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-  </body>
+</body>
+
 </html>

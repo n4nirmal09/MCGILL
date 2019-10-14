@@ -17,11 +17,11 @@
 		data() {
 			return {
 				teams: [{
-					name: 'Steve McGill',
-					description: 'Steve has over 40 years’ experience in the insurance industry. He started at Bland Payne and Willis Faber before moving to JLT where undertook a variety of leadership roles until he was appointed CEO in 2001. He left JLT for Aon, where most recently he was Group President. He is the founder and CEO of McGill and Partners.',
+					name: 'Steve McGill CBE',
+					description: 'Steve has over 40 years’ experience in the insurance industry. He started at Bland Payne and Willis Faber before moving to JLT where he undertook a variety of leadership roles until he was appointed CEO in 2001. He left JLT for Aon, where most recently he was Group President. He is the founder and CEO of McGill and Partners.',
 					thumbnail: require('@/assets/Steve McGill.jpg')
 				}, {
-					name: 'John Lloyd',
+					name: 'John Lloyd OBE',
 					description: 'John was a founder of Lloyd Thompson in 1981 and undertook numerous senior leadership roles including CEO of Lloyd & Partners and subsequently, JLT Specialty Ltd. Over the last 38 years he played a key role in the development of JLT, helping to take it from a start-up business to one of the world’s leading international insurance brokers. He left JLT in 2018 following its takeover by Marsh & McLennan Companies. He is Chairman of McGill and Partners.',
 					thumbnail: require('@/assets/JohnLloyd.jpg')
 				}, {

@@ -15,7 +15,7 @@
                     First Floor,<br>
                     100 Leadenhall Street,<br>
                     London<br>
-                    EC4A 3PB
+                    EC3A 3BP
                 </p>
             </template>
         </cta-card>

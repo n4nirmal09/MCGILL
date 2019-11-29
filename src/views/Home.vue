@@ -66,7 +66,7 @@ export default {
         this.$nextTick(() => {
             setTimeout(this.sectionBg, 2000)
             const resize = utilities.debounce(() => {
-                this.scrollController.destroy(true)
+                if(this.scrollController) this.scrollController.destroy(true)
                 this.sectionBg()
             }, 250)
 

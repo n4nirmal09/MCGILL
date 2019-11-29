@@ -3,9 +3,9 @@
         animation: 'from-bottom-elems-stagger'
     }">
         <cta-card :mail="'info@mcgillpartners.com'" :phone="'+44 (0)20 3985 1800'" :appendClasses="'text-light'">
+            <template slot="title">UK</template>
             <template slot="description">
                 <p>
-                    UK<br>
                     Suite 806, Gallery 8,<br>
                     Lloyd's Of London,<br>
                     1 Lime Street,<br>
@@ -18,9 +18,13 @@
                     London<br>
                     EC3A 3BP
                 </p>
+            </template>
+        </cta-card>
+        <cta-card :mail="'Michael.OConnell@mcgillpartners.com'" :phone="'+1 (929) 323-0401'" :appendClasses="'text-light'">
+            <template slot="title">US</template>
+            <template slot="description">
                 <p>
-                    US<br>
-                    McGill Global Risk Solutions LLC,<br>
+                    McGill Global Risk<br>Solutions LLC,<br>
                     230 Park Avenue,<br>
                     3rd Floor,<br>
                     New York, NY 10169

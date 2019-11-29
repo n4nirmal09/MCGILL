@@ -5,6 +5,7 @@
         <cta-card :mail="'info@mcgillpartners.com'" :phone="'+44 (0)20 3985 1800'" :appendClasses="'text-light'">
             <template slot="description">
                 <p>
+                    UK<br>
                     Suite 806, Gallery 8,<br>
                     Lloyd's Of London,<br>
                     1 Lime Street,<br>
@@ -16,6 +17,13 @@
                     100 Leadenhall Street,<br>
                     London<br>
                     EC3A 3BP
+                </p>
+                <p>
+                    US<br>
+                    McGill Global Risk Solutions LLC,<br>
+                    230 Park Avenue,<br>
+                    3rd Floor,<br>
+                    New York, NY 10169
                 </p>
             </template>
         </cta-card>
